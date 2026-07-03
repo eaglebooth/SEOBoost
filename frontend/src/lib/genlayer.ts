@@ -21,7 +21,7 @@ declare global {
   }
 }
 
-const network = (process.env.NEXT_PUBLIC_NETWORK as NetworkName) || "testnetAsimov";
+const network = (process.env.NEXT_PUBLIC_NETWORK as NetworkName) || "studionet";
 const endpoint = process.env.NEXT_PUBLIC_GENLAYER_RPC;
 const chainMap = {
   localnet,
@@ -31,7 +31,7 @@ const chainMap = {
 };
 
 const client = createClient({
-  chain: chainMap[network] ?? testnetAsimov,
+  chain: chainMap[network] ?? studionet,
   ...(endpoint ? { endpoint } : {}),
 });
 
@@ -134,7 +134,7 @@ export async function writeContract(
     }
 
     const writeClient = createClient({
-      chain: chainMap[network] ?? testnetAsimov,
+      chain: chainMap[network] ?? studionet,
       ...(endpoint ? { endpoint } : {}),
       provider: window.ethereum,
       account: account as `0x${string}`,
