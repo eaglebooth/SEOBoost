@@ -1,0 +1,3 @@
+import { CampaignAction } from "@/components/CampaignAction";
+import { PageIntro } from "@/components/PageIntro";
+export default function NewCampaign(){return <main><PageIntro kicker="Function 01 / payable" title="LOCK A PERFORMANCE REWARD." copy="Your connected wallet becomes the client. The GEN sent with this transaction becomes contract-held campaign escrow."/><section className="content-band"><div className="shell workflow-layout"><aside className="workflow-guide"><span>Before funding</span><ol><li>Confirm the agency wallet.</li><li>Use a bare target domain without a protocol.</li><li>Choose at least 15 stable ranking days.</li><li>Fund only after reviewing every term.</li></ol></aside><CampaignAction mode="create"/></div></section></main>}

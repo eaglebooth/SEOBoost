@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Header } from "@/components/Header";
+import { Providers } from "@/components/Providers";
 
 export const metadata: Metadata = {
   title: "SEOBoost",
@@ -13,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body><Providers><div className="page"><Header />{children}</div></Providers></body>
     </html>
   );
 }

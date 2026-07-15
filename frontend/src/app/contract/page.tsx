@@ -1,0 +1,2 @@
+import { ContractVerifier } from "@/components/ContractVerifier";import { PageIntro } from "@/components/PageIntro";
+export default function Contract(){return <main><PageIntro back="/" kicker="Deployment proof" title="VERIFY ANY SEOBOOST V2 DEPLOYMENT." copy="The address is configurable at runtime, so reviewers can test their own deployment without rebuilding the frontend."/><ContractVerifier/></main>}
